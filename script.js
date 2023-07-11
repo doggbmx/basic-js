@@ -1,40 +1,49 @@
 const h1 = document.querySelector("h1");
-const p = document.querySelector("p");
-const parrafito = document.querySelector(".parrafito");
-const pid = document.querySelector("#pid");
-const input = document.querySelector("input");
+const input1 = document.querySelector("#calculo1");
+const input2 = document.querySelector("#calculo2");
+const pResult = document.querySelector("#result");
+const btn = document.querySelector("#btnCalcular");
 
-console.log({
-  h1,
-  p,
-  parrafito,
-  pid,
-});
+function btnOnClick() {
+  let result = input1.value + input2.value;
+  //   console.log(input1.value + input2.value);
+  pResult.innerHTML = result;
+}
+// const p = document.querySelector("p");
+// const parrafito = document.querySelector(".parrafito");
+// const pid = document.querySelector("#pid");
 
-// this is how you can change the text of an element
-// or even add more HTML tags inside
-h1.innerHTML = "perrito <br> feo";
+// console.log({
+//   h1,
+//   p,
+//   parrafito,
+//   pid,
+// });
 
-// obtain a attribute
-console.log(h1.getAttribute("coso"));
-// change a attribute
-h1.setAttribute("coso", "nuevo valor");
-console.log(h1.getAttribute("coso"));
+// // this is how you can change the text of an element
+// // or even add more HTML tags inside
+// h1.innerHTML = "perrito <br> feo";
 
-// add a class atributte
-h1.classList.add("nueva-clase");
-// remove a class atributte
-h1.classList.remove("nueva-clase");
-// toggle a class atributte
-h1.classList.toggle("nueva-clase");
-// check if a class atributte exists
-console.log(h1.classList.contains("nueva-clase"));
+// // obtain a attribute
+// console.log(h1.getAttribute("coso"));
+// // change a attribute
+// h1.setAttribute("coso", "nuevo valor");
+// console.log(h1.getAttribute("coso"));
 
-input.value = "nuevo valor";
+// // add a class atributte
+// h1.classList.add("nueva-clase");
+// // remove a class atributte
+// h1.classList.remove("nueva-clase");
+// // toggle a class atributte
+// h1.classList.toggle("nueva-clase");
+// // check if a class atributte exists
+// console.log(h1.classList.contains("nueva-clase"));
 
-// create a new element
-const newElement = document.createElement("img");
-console.log(newElement);
-newElement.setAttribute("src", "https://picsum.photos/200");
+// input.value = "nuevo valor";
 
-pid.append(newElement);
+// // create a new element
+// const newElement = document.createElement("img");
+// console.log(newElement);
+// newElement.setAttribute("src", "https://picsum.photos/200");
+
+// pid.append(newElement);
