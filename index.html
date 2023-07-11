@@ -9,17 +9,17 @@
   <body>
     <h1>Manipulacion del DOM</h1>
 
-    <input id="calculo1" type="text" placeholder="Soy un input" />
-    <input
-      onchange="console.log('cambio el input');"
-      id="calculo2"
-      type="text"
-      placeholder="Soy un segundo input"
-    />
-
-    <button id="btnCalcular" onclick="btnOnClick();">Tocame cochino</button>
-
-    <p id="result"></p>
+    <form id="form">
+      <input id="calculo1" type="text" placeholder="Soy un input" />
+      <input
+        onchange="console.log('cambio el input');"
+        id="calculo2"
+        type="text"
+        placeholder="Soy un segundo input"
+      />
+      <button id="btnCalcular">Tocame cochino</button>
+      <p id="result"></p>
+    </form>
 
     <script src="./script.js"></script>
   </body>

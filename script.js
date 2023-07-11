@@ -3,8 +3,14 @@ const input1 = document.querySelector("#calculo1");
 const input2 = document.querySelector("#calculo2");
 const pResult = document.querySelector("#result");
 const btn = document.querySelector("#btnCalcular");
+const form = document.querySelector("#form");
 
-function btnOnClick() {
+form.addEventListener("submit", btnOnClick);
+// btn.addEventListener("click", btnOnClick);
+
+function btnOnClick(event) {
+  console.log(event);
+  event.preventDefault();
   let result = input1.value + input2.value;
   //   console.log(input1.value + input2.value);
   pResult.innerHTML = result;
